@@ -1,0 +1,185 @@
+header , .copy{
+    background-color: rgb(0, 219, 253);
+    text-align: center;
+    border-bottom: 0px;
+}
+
+.cabecera_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.cabecera_img {
+    height: 10%;
+    margin-right: 10px;
+    width: 80px;
+   
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(255, 255, 255);
+}
+nav a {
+    color: rgb(64, 73, 73);
+    padding: 15px 30px;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.navegacion a:hover, .actual {
+    color: black;
+    background-color: rgb(0, 238, 255);
+}
+/*PLAN*/
+.plan{
+    border-top: rgb(118, 158, 214) 3px inset;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+h2{
+    color: #1e90ff;
+    font-size: 25px;
+    font-family: Cambria;
+}
+p{
+    font-size: 18px;
+    font-family: arial;
+}
+.dogcat{
+    box-shadow: 5px 5px 15px gray;
+    padding: 5px;
+}
+#mas,#mas2{
+    padding: 7px 10px;
+    background-color: rgb(49, 110, 252);
+    color: white;
+    border-radius: 25px;
+
+}
+.centTable{
+    text-align: center;
+}
+.centTable table{
+    margin: 0 auto;
+    text-align: left;
+}
+/*Formulario*/
+#contacto{
+    background-image: url(./../img/fondo.jpg);
+}
+form{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+#email,#nombre,#telefono,#mensaje,#seleccion{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Borde del campo */
+    padding: 8px; /* Espaciado interno para separar el texto del borde */
+    transform: perspective(500px) rotateX(10deg); /* Efecto 3D */
+}
+#country{
+    margin-bottom: 10px;
+}
+/*Footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 187, 255);
+    color: aliceblue;
+    padding-top: 20px;
+}
+.f1{
+    flex: 33.3%;
+}
+.f2{
+    flex: 33.3%;
+    border: 2px solid white;
+    border-top: 0;
+    border-bottom: 0;
+}
+.f2 a{
+    text-decoration: none;
+    color: white;
+}
+.f2 ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.f2 li{
+    padding: 4px;
+}
+.f3{
+    flex: 33.3%;
+}
+/*suscripcion*/
+.class1 {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #00eaff;
+    color: black;
+}
+@media all and (max-width:440px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav a {
+        margin-right: 0px;
+        padding: 8px;
+    }
+}
+@media (max-width: 321px){
+    .f2 {
+        border: 2px solid white;
+        border-right: 0;
+        border-left: 0;
+    }
+}
